@@ -21,20 +21,33 @@
 <body>
     <header>
         <div class="startbootstrap  container-fluid d-flex justify-content-between">
-            <span>START BOOTSTRAP</span>
-            <span><i class="fa-solid fa-star"></i></span>
+            <span class="fw-bold">START BOOTSTRAP</span>
+            <span class="d-md-none"><i class="fa-solid fa-bars"></i></span>
+            <div class="d-none d-md-block fw-bold fs-35">
+                <span class="mx-2">PORTFOLIO</span>
+                <span class="mx-2">ABOUT</span>
+                <span class="mx-2">CONTACT</span>
+            </div>
         </div>
     </header>
     <main>
         <div class="firstpage container-fluid d-flex flex-column justify-content-center align-items-center">
-            <img src="/bootstrap_freelancer/img/avatar.svg" alt="">
+            <img src="/bootstrap_freelancer/img/avatar.svg" class="mt-3" alt="">
             <h1>START BOOTSTRAP</h1>
+            <div class="d-flex align-items-center justify-content-center gap-2">
+            <div class="whiteline col-1"></div>
             <p><i class="fa-solid fa-star"></i></p>
-            <p>GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</p>
+            <div class="whiteline col-1"></div>
+            </div>
+            <p class="fw-bold mb-3">GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</p>
         </div>
         <div class="portfolio container text-center mt-5 mb-2">
             <h1>PORTFOLIO</h1>
-            <p><i class="fa-solid fa-star"></i></p>
+            <div class="d-flex align-items-center justify-content-center gap-2">
+                <div class="blackline col-1 border-top-2"></div>
+                <p><i class="fa-solid fa-star"></i></p>
+                <div class="blackline col-1 border-top-2"></div>
+            </div>
             <div class="row">
                 <div class=".col-12 col-md-6 col-xl-4 mb-3">
                      <img src="/bootstrap_freelancer/img/cabin.png" class="rounded"  alt="">
@@ -58,7 +71,11 @@
         </div>
         <div class="about conteiner-fluid d-flex flex-column align-items-center">
             <h1 class="mt-3">ABOUT</h1>
-            <p><i class="fa-solid fa-star"></i></p>
+            <div class="d-flex align-items-center justify-content-center gap-2">
+                <div class="whiteline col-1 border-top-2 border-white"></div>
+                <p><i class="fa-solid fa-star"></i></p>
+                <div class="whiteline col-1 border-top-2 border-white"></div>
+            </div>
             <div class="row justify-content-center">
                 <div class="col-10 col-md-5">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus molestiae impedit minima consequuntur, voluptate inventore soluta. Unde ipsam non sunt.</p>
@@ -67,55 +84,63 @@
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi reiciendis laboriosam placeat eveniet provident? Velit architecto sed ab sunt repellat.</p>
                 </div>
             </div>
-            <button class="mb-3 mt-3">Download</button>
+            <button class="download mb-3 mt-3"><i class="fa-solid fa-download"></i>Download</button>
         </div>
         <div class="contact-me conteiner-fluid d-flex flex-column align-items-center">
             <h1 class="mt-3">CONTACT ME</h1>
-            <p><i class="fa-solid fa-star"></i></p>
+            <div class="d-flex align-items-center justify-content-center gap-2">
+                <div class="blackline2 col-1 border-top-2"></div>
+                <p><i class="fa-solid fa-star"></i></p>
+                <div class="blackline2 col-1 border-top-2"></div>
+            </div>
             <div class="row justify-content-center mb-3">
-                <div class="col-10">
+                <div class="details col-10">
                 <p>Name</p>
                 </div>
-                <div class="col-10">
+                <div class="details col-10 mt-2">
                 <p>Email Address</p>
                 </div>
-                <div class="col-10">
+                <div class="details col-10 mt-2">
                 <p>Phone Number</p>
                 </div>
-                <div class="col-10">
+                <div class="details message col-10 mt-3">
                 <p>Message</p>
                 </div>
                 <div class="col-10">
-                <button>Send</button>
+                <button class="send mt-2">Send</button>
                 </div>
 
             </div>
 
         </div>
-        <div class="location conteiner-fluid d-flex flex-column align-items-center justify-content-center">
+        <div class="location conteiner-fluid d-flex align-items-center justify-content-center">
           <div class="row text-center justify-content-center align-items-center mt-4 mb-4">
-            <div class="col-10">
+            <div class="col-10  col-md-3">
                <h3>LOCATION</h3> 
                <p>2215 John Daniel Drive Clark,MO 54243</p>
             </div>
-            <div class="col-10">
+            <div class="col-10 col-md-3">
                 <h3>AROUND THE WORLD</h3>
                 <div>
-                    <span><i class="fa-brands fa-facebook"></i></span>
-                    <span><i class="fa-brands fa-google-plus-g"></i></span>
-                    <span><i class="fa-brands fa-twitter"></i></span>
-                    <span><i class="fa-brands fa-linkedin-in"></i></span>
+                    <span><i class="circle fa-brands fa-facebook "></i></span>
+                    <span><i class="circle fa-brands fa-google-plus-g "></i></span>
+                    <span><i class="circle fa-brands fa-twitter"></i></span>
+                    <span><i class="circle fa-brands fa-linkedin-in"></i></span>
                 </div>
             </div>
-            <div class="col-10">
+            <div class="col-10 col-md-3 mt-3">
                   <h3>ABOUT FREELANCER</h3>
-                  <p>Freelance is a free to use,open source Bootstrap theme created by <span>Start Bootstrap</span></p>
+                  <p>Freelance is a free to use,open source Bootstrap theme created by <span class="green-text">Start Bootstrap</span></p>
             </div>
           </div>
         </div>
            
     </main>
-    <footer></footer>
+    <footer>
+        <div class="copyright d-flex align-items-center justify-content-center">
+            <p class=>Copyright@Your Website 2019</p>
+        </div>
+    </footer>
     
 </body>
 </html>
